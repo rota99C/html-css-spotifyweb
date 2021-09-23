@@ -7,6 +7,10 @@
         <link rel="stylesheet" href="./css/style.css">
         <link rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+            rel="stylesheet">
+
         <title>Spotify</title>
     </head>
     <body>
@@ -22,14 +26,31 @@
         <main class="flex">
             <div class="sidebar flex-item">
                 <div class="menu">
-                    <ul>
-                        <li><i class="fas fa-home"></i> Home</li>
+                    <ul class="lista-home">
+                        <li><i class="fas fa-home"></i>Home</li>
                         <li><i class="fas fa-search"></i>Cerca</li>
-                        <li></li>
+                        <li><i class="fas fa-book"></i>La Tua libreria</li>
                     </ul>
                 </div>
-                <div class="playlist"></div>
-                <div class="account"></div>
+                <div class="playlist">
+                    <h3>PLAYLIST</h3>
+                    <ul class="lista-playlist">
+                        <li><i class="fas fa-plus-square"></i>Crea Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                        <li>Nuova Playlist</li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <p><i class="far fa-arrow-alt-circle-down"></i>Installa app</p>
+                    <hr>
+                    <p><i class="fas fa-user-circle"></i><strong>John Doe</strong></p>
+                </div>
 
 
 
@@ -39,7 +60,11 @@
 
         </main>
         <footer class="flex">
-            <div class="current-song"></div>
+            <div class="current-song flex">
+                <img src="./img/sinister.jpeg" alt="immagine-sinister">
+                <p><strong>Sinister</strong><br>Brano Nome</p>
+                <span><i class="far fa-heart"></i><i class="far fa-folder"></i></span>
+            </div>
             <div class="player"></div>
             <div class="sound"></div>
         </footer>

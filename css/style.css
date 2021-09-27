@@ -43,7 +43,7 @@ header {
 }
 
 .logo {
-	width: 15%;
+	width: 248px;
 	padding: 20px 60px 20px 20px;
 	background-color: rgb(0, 0, 0);
 }
@@ -53,7 +53,7 @@ header {
 }
 
 .upgrade {
-	width: 200px;
+	width: 500px;
 	justify-content: flex-end;
 	align-items: center;
 	margin-right: 20px;
@@ -170,7 +170,7 @@ main {
 /* content */
 
 .content {
-	width: calc(100% - 250px);
+	width: calc(100% - 248px);
 	overflow-y: scroll;
 	padding: 0 20px;
 }
@@ -259,6 +259,8 @@ footer {
 	height: 70px;
 	background-color: rgb(40, 40, 40);
 	justify-content: space-between;
+	position: fixed;
+	z-index: 1;
 }
 
 .current-song {
@@ -388,7 +390,8 @@ footer {
 
 /* responsive */
 
-@media only screen and (max-height: 150px) {
+@media only screen and (max-height: 80px) {
+	
 }
 
 /* extra-small devices */
@@ -396,6 +399,9 @@ footer {
 	.sidebar {
 		width: 50px;
 		padding: 0 13px;
+	}
+	.content {
+		width: calc(100% - 50px);
 	}
 
 	.sidebar .menu ul li span {
@@ -412,6 +418,20 @@ footer {
 
 	footer {
 		font-size: 0.5rem;
+	}
+
+	.logo {
+		width: 50px;
+		padding: 0 13px;
+	}
+
+	header .grande-logo {
+		display: none;
+	}
+
+	header .piccolo-logo{
+		display: block;
+		width: 100%;
 	}
 }
 

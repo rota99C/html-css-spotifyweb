@@ -182,6 +182,14 @@ main {
     vertical-align: middle;
 }
 
+.navbar a {
+	text-decoration: none;
+}
+
+.navbar a:visited {
+	color: rgb(125, 127, 132);
+}
+
 .row {
 	flex-wrap: wrap;
 	justify-content: flex-start;
@@ -203,6 +211,23 @@ main {
 .row .song p {
 	color: rgb(119,122,127);
 }
+
+
+.container-song {
+	position: relative;
+}
+
+.container-song i {
+	position: absolute;
+	visibility: hidden;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	color: white;
+	font-size: 40px;
+}
+
+
 
 .content h2 {
 	margin-bottom: 8px;
@@ -234,10 +259,15 @@ footer {
 	color: rgb(113, 113, 113);
 }
 
+.current-song div {
+	align-self: center;
+}
+
 .sound {
 	width: 15%;
 	align-items: center;
 	justify-content: center;
+	margin-right: 20px;
 }
 
 .player {
@@ -273,8 +303,8 @@ footer {
 	font-size: 10px;
 }
 
-.fa-play-circle {
-	font-size: 20px !important;
+.buttons .fa-play-circle {
+	font-size: 20px;
 }
  
 .reprodution {
@@ -294,10 +324,65 @@ footer {
 
 .song-lenght div {
 	width: 20%;
-	height: 100%;
+	height: 2px;
 	background-color: rgb(193, 193, 193);
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.sound .song-lenght {
-	width: 50%;
+.song-lenght i {
+	visibility: hidden;
+}
+
+/* animazione */
+
+.upgrade:hover p{
+	font-size: larger;
+
+}
+
+.container-song:hover i{
+	visibility: visible;
+	z-index: 1;
+}
+
+.container-song:hover img{
+	filter:brightness(0.6);
+}
+
+.content a:hover, 
+.sidebar a:hover, 
+.sidebar a:hover i, 
+.current-song p:hover,
+.current-song i:hover{
+	color: white;
+}
+
+.sidebar a:hover img {
+	filter: brightness(1.5);
+}
+
+.current-song p:last-of-type:hover {
+	text-decoration: underline;
+}
+
+.buttons .fa-play-circle:hover {
+	font-size: 23px;
+}
+
+.song-lenght div:hover {
+	background-color: yellowgreen;
+	cursor: pointer;
+}
+
+.song-lenght div:hover i {
+	visibility: visible;
+}
+
+/* responsive */
+
+@media only screen and (max-height: 70px) {
+	header, main {
+		visibility: hidden;
+	}
 }

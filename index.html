@@ -61,12 +61,12 @@
             <div class="content">
                 <div class="navbar">
                     <ul>
-                        <li>IN EVIDENZA</li>
-                        <li>PODCAST</li>
-                        <li>CLASSIFICHE</li>
-                        <li>GENERI E MOOD</li>
-                        <li>NUOVE USCITE</li>
-                        <li>SCOPRI</li>
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
                     </ul>
                 </div>
 
@@ -75,32 +75,50 @@
                     <h2 class="white-text">Recently Played</h2>
                     <div class="row flex">
                         <div class="song">
-                            <img src="./img/metal_lifting.jpg" alt="heavy-metal">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/metal_lifting.jpg" alt="heavy-metal">
+                            </div>  
                             <h3 class="white-text">Heavy Metal</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="song">
-                            <img src="./img/stranger.jpeg" alt="stranger-things-vol-1">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/stranger.jpeg" alt="stranger-things-vol-1">
+                            </div>
                             <h3 class="white-text">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
                             <p>Kyle Dixon & Michael Stein</p>
                         </div>
                         <div class="song">
-                            <img src="./img/aquietplace.jpeg" alt="a-uiet-place">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/aquietplace.jpeg" alt="a-uiet-place">
+                            </div>
                             <h3 class="white-text">A quiet place</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="song">
-                            <img src="./img/split.jpeg" alt="split">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/split.jpeg" alt="split">
+                            </div>
                             <h3 class="white-text">Split</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="song">
-                            <img src="./img/cure.jpeg" alt="a-cure-for-wellness">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/cure.jpeg" alt="a-cure-for-wellness">
+                            </div>           
                             <h3 class="white-text">A cure for wellness</h3>
                             <p>Subtitle</p>
                         </div>
                         <div class="song">
-                            <img src="./img/sinister.jpeg" alt="sinister">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/sinister.jpeg" alt="sinister">
+                            </div>
                             <h3 class="white-text">Sinister</h3>
                             <p>Subtitle</p>
                         </div>
@@ -111,11 +129,17 @@
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="row flex">
                         <div class="song">
-                            <img src="./img/radar.jpeg" alt="release-radar">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/radar.jpeg" alt="release-radar">
+                            </div>
                             <h3 class="white-text">Release Radar</h3>
                         </div>
                         <div class="song">
-                            <img src="./img/mixdaily.jpeg" alt="daily-mix-1">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/mixdaily.jpeg" alt="daily-mix-1">
+                            </div>
                             <h3 class="white-text">Daily Mix 1</h3>
                         </div>
                     </div>
@@ -125,11 +149,17 @@
                     <p>Più ascolti, più accurati saranno i suggerimenti.</p>
                     <div class="row flex">
                         <div class="song">
-                            <img src="./img/youg.jpeg" alt="lana-del-ray">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/youg.jpeg" alt="lana-del-ray">
+                            </div>
                             <h3 class="white-text">Lana del Ray</h3>
                         </div>
                         <div class="song">
-                            <img src="./img/einaudi.jpeg" alt="ludovico-einaudi">
+                            <div class="container-song">
+                                <i class="far fa-play-circle"></i>
+                                <img src="./img/einaudi.jpeg" alt="ludovico-einaudi">
+                            </div>
                             <h3 class="white-text">Ludovico Einaudi</h3>
                         </div>
                     </div>
@@ -143,7 +173,8 @@
         <footer class="flex w-100">
             <div class="current-song flex h-100">
                 <img src="./img/sinister.jpeg" alt="immagine-sinister">
-                <p><strong class="white-text">Sinister</strong><br>Brano Nome</p>
+                <div><p><strong class="white-text">Sinister</strong></p>
+                <p>Brano Nome</p></div>
                 <span><i class="far fa-heart"></i><i class="far fa-folder"></i></span>
             </div>
             <div class="player h-100 white-text">
@@ -157,7 +188,9 @@
                 <div class="reprodution flex">
                     <p>0.25</p>
                     <div class="song-lenght">
-                        <div></div>
+                        <div class="flex">
+                            <i class="fas fa-circle"></i>
+                        </div>
                     </div>
                     <p>4.35</p>
                 </div>
@@ -167,7 +200,9 @@
                 <i class="fas fa-desktop"></i>
                 <i class="fas fa-volume-up"></i>
                 <div class="song-lenght">
-                    <div></div>
+                    <div class="flex">
+                        <i class="fas fa-circle"></i>
+                    </div>
                 </div>
             </div>
         </footer>
